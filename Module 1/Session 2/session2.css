@@ -1,0 +1,20 @@
+.playlist-form {
+    margin: 0 auto; width: 25%; 
+}
+
+.playlist-form h1{
+    text-align: center;
+}
+
+#playlist-session {
+    border: 1px solid black;
+    padding: 1px;
+    margin: 0 auto;
+    width: 25%;
+    text-align:
+    center; line-height: 1px;
+}
+
+#playlist-session img{
+    width: 100%;
+}
