@@ -20,7 +20,7 @@ function show(data) {
     let playlist =
         `<img src= ${data.album.images[0].url} alt="22miles" style="width: 100%;"><br>
         <p>Title</p>
-        <p>GIGIH</p><br>
+        <p>${data.name}</p><br>
         <p>Artists</p>
         <p>${data.artists[0].name}</p><br>
         <p>Albums</p>
