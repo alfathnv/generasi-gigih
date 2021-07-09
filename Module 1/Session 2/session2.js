@@ -31,6 +31,7 @@ function get_api(url) {
         })
         .catch((err) => {
             console.log("rejected:", err);
+            alert("Ini Alert Failed", err);
         });
 };
 
