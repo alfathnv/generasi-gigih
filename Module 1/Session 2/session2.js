@@ -12,7 +12,7 @@ function get_api(url) {
         show(data)
         console.log(data)})
       .catch((err) => {
-        alert("Request Failed", err);
+        alert("Ini Alert Failed", err);
     });
 }
 
