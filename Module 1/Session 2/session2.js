@@ -9,10 +9,25 @@ function get_api(url) {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        show(data)
         console.log(data)})
       .catch((err) => {
         alert("Request Failed", err);
     });
+}
+
+function show(data) {
+    let playlist =
+        `<img src= ${data.album.images[0].url} alt="22miles" style="width: 100%;"><br>
+        <p>Title</p>
+        <p>GIGIH</p><br>
+        <p>Artists</p>
+        <p>${data.artists[0].name}</p><br>
+        <p>Albums</p>
+        <p>${data.album.name}</p><br>
+        <button>Click</button>`;
+
+    document.getElementById("playlist-session").innerHTML = playlist;
 }
 
 get_api(API_url);
